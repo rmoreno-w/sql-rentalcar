@@ -1,0 +1,1 @@
+SELECT c.NAME, COUNT(c.NAME) as "Numero de Locações" FROM LOCATIONS AS l INNER JOIN CUSTOMERS as c ON l.CUSTOMER_ID = c.ID GROUP BY c.NAME HAVING "Numero de Locações" >= 2;
