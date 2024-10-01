@@ -1,0 +1,1 @@
+SELECT e.NAME, COUNT(e.NAME) as "Numero de Locações" FROM LOCATIONS AS l INNER JOIN EMPLOYEES as e ON l.EMPLOYEE_ID = e.ID GROUP BY e.NAME HAVING "Numero de Locações" >= 2;
